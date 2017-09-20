@@ -1,0 +1,11 @@
+services:
+    
+    flexix_checlsum.util.dir_builder:
+        class: Flexix\ChecksumBundle\Util\DirBuilder
+        public: true
+        arguments: ['%kernel.root_dir%']
+   
+    flexix_checlsum.util.checksum_controller:
+        class: Flexix\ChecksumBundle\Util\ChecksumController
+        public: true
+        arguments: ['%kernel.root_dir%']
